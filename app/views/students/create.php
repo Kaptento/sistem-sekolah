@@ -29,39 +29,44 @@
             </div>
             <!-- Card Header End -->
 
-             <!-- card body Start -->
-                <div class="bg-white shadow rounded-lg bg-white">
-                    <table class="w-full">
-                     <thead class="bg-gray-200">
-                        <tr>
-                            <th class="px-4 py-2 text-left">No</th>
-                            <th class="px-4 py-2 text-left">Nama</th>
-                            <th class="px-4 py-2 text-left">NIS</th>
-                            <th class="px-4 py-2 text-left">Kelas</th>
-                            <th class="px-4 py-2 text-left">No Telepon</th>
-                            <th class="px-4 py-2">Aksi</th>
-                        </tr>
-                    <tbody>
-                        <tr>
-                            <td class="px-4 py-2 text-left">1</td>
-                            <td class="px-4 py-2 text-left">Andi</td>
-                            <td class="px-4 py-2 text-left">1234</td>
-                            <td class="px-4 py-2 text-left">11 TKJ 2</td>
-                            <td class="px-4 py-2 text-left">08123456789</td>
-                            <td class="px-4 py-2">
-                                <div class="flex justify-center items-center gap-4">
-                                <a href="" class="text-green-500">Detail</a>
-                                <a href="" class="text-yellow-500">Edit</a>
-                                <a href="" class="text-red-500">Hapus</a>
-                            </div>
-                        </td>
-                        </tr>
-                    </tbody>
-                    </thead>
-                    </table>
-                </div>
-             <!-- card body End -->
-        </div>
+            <!-- card body Start -->
+            <div class="bg-white shadow rounded-lg bg-white p-4">
+                <form action="" class="grid grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label class="block font-bold" for="name">Nama</label>
+                        <input class="w-full px-4 py-2 border rounded-lg" type="text" id="name"
+                            placeholder="Masukan nama" name="name">
+                    </div>
+
+                    <div class="bg-white shadow rounded-lg bg-white p-4">
+
+
+                        <div class="bg-white shadow rounded-lg bg-white p-4">
+                            <form action="">
+                                <div class="space-y-2">
+                                    <label class="block font-bold" for="nis">NIS</label>
+                                    <input class="w-full px-4 py-2 border rounded-lg" type="text" id="nis"
+                                        placeholder="Masukan NIS" name="nis">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="block font-bold" for="class">Kelas</label>
+                                    <input class="w-full px-4 py-2 border rounded-lg" type="text" id="class"
+                                        placeholder="Masukan nama" name="class">
+                                </div>
+
+                                <div class="bg-white shadow rounded-lg bg-white p-4">
+                                    <form action="">
+                                        <div class="space-y-2">
+                                            <label class="block font-bold" for="phone_number">No Telepon</label>
+                                            <input class="w-full px-4 py-2 border rounded-lg" type="text"
+                                                id="number_phone" placeholder="Masukan No Telepon" name="phone_number">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- card body End -->
+                        </div>
+
+                    </div>
     </main>
     <!-- Main End -->
 
