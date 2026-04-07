@@ -15,6 +15,11 @@ public function create()
 }
 
 
-}
 
+public function show(string $id)
+{
+        require_once '../app/views/students/show.php';
+
+}
+}
 ?>
