@@ -7,29 +7,29 @@ use App\Core\Controller;
 class StudentController extends Controller
 {
 
-public function index()
-{
+        public function index()
+        {
 
-        $this->view('students.index');
+                $this->view('students.index');
 
-}
+        }
 
-public function create()
-{
-           $this->view('students.create');
-}
+        public function create()
+        {
+                $this->view('students.create');
+        }
 
 
 
-public function show(string $id)
-{
-        $this->view('students.show', ['id' => $id]);
-}
+        public function show(string $id)
+        {
+                $this->view('students.show', ['id' => $id]);
+        }
 
-public function edit(string $id)
-{
-        $this->view('students.edit', ['id' => $id]);
-}
+        public function edit(string $id)
+        {
+                $this->view('students.edit', ['id' => $id]);
+        }
 
 
 
