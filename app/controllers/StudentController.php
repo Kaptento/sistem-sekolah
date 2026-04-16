@@ -9,33 +9,36 @@ use App\Models\Student;
 class StudentController extends Controller
 {
     public function index()
- 
     {
         $studentModel = new Student();
         $students = $studentModel->getStudents();
+       
  
-        $this->view('students.index',
-         ['students' => $students]
-         );
+        $this->view('students.index', ['students' => $students]);
     }
+   
  
     public function create()
- 
-    {
+   {
         $this->view('students.create');
+   }
  
-    }
+   public function show(string $id)
+   {
  
-    public function show(string $id)
-    {
-        $this->view('students.show');
-   
-    }
+        $id = intval ($id);
+        $studentModel = new Student();
+        $student = $studentModel->getStudent($id);
+        // Logic untuk menampilkan detail siswa berdasarkan ID
+        $this->view('students.show', [
+            'student' => $student
+        ]);
+   }
  
     public function edit(string $id)
     {
-        $this->view('students.edit');
-   
-    }
+        // Logic untuk menampilkan form edit siswa berdasarkan ID
+        $this->view('students.edit');  
+     }
+ 
 }
-?>
